@@ -10,13 +10,15 @@ function displayCityTime() {
     );
   }
 
-  let osloElement = document.querySelector("#oslo");
-  if (osloElement) {
-    let osloDateElement = osloElement.querySelector(".city-date");
-    let osloTimeElement = osloElement.querySelector(".city-time");
-    let osloTime = moment().tz("Europe/Oslo");
-    osloDateElement.innerHTML = osloTime.format("MMMM Do YYYY");
-    osloTimeElement.innerHTML = osloTime.format("hh:mm:ss[<small>]A[</small>]");
+  let galapagosElement = document.querySelector("#galapagos");
+  if (galapagosElement) {
+    let galapagosDateElement = galapagosElement.querySelector(".city-date");
+    let galapagosTimeElement = galapagosElement.querySelector(".city-time");
+    let galapagosTime = moment().tz("Pacific/Galapagos");
+    galapagosDateElement.innerHTML = galapagosTime.format("MMMM Do YYYY");
+    galapagosTimeElement.innerHTML = galapagosTime.format(
+      "hh:mm:ss[<small>]A[</small>]"
+    );
   }
 
   let harareElement = document.querySelector("#harare");

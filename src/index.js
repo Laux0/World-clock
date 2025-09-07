@@ -43,7 +43,7 @@ function updateCityLocation(event) {
               "hh:mm:ss[<small>]A[</small>]"
             )}</div>
           </div>
-        </div>`;
+        </div> <a href="/">All cities</a>`;
   } else {
     location.reload();
   }

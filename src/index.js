@@ -23,9 +23,15 @@ setInterval(displayCityTime, 1000);
 
 function updateCityLocation(event) {
   let cityTimezone = event.target.value;
+
+  if (cityTimezone === "current") {
+    cityTimezone = moment.tz.guess();
+  }
+
   let cityName = cityTimezone.split("/")[1];
   let cityTime = moment().tz(cityTimezone);
   let cityElement = document.querySelector("#cities");
+
   if (event.target.value.length > 0) {
     cityElement.innerHTML = `<div class="city">
           <div class="city-left">

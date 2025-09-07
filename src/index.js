@@ -22,7 +22,8 @@ function updateCityLocation(event) {
   let cityName = cityTimezone.split("/")[1];
   let cityTime = moment().tz(cityTimezone);
   let cityElement = document.querySelector("#cities");
-  cityElement.innerHTML = `<div class="city">
+  if (event.target.value.length > 0) {
+    cityElement.innerHTML = `<div class="city">
           <div class="city-left">
             <h3 class="city-name">${cityName}</h3>
             <div class="city-date">${cityTime.format("MMMM Do YYYY")}</div>
@@ -33,6 +34,9 @@ function updateCityLocation(event) {
             )}</div>
           </div>
         </div>`;
+  } else {
+    location.reload();
+  }
 }
 
 let citySelectElement = document.querySelector("#city-choice");

@@ -51,11 +51,7 @@ footer {
 }
 
 .city-time {
-  font-size: 40px;
+  font-size: 36px;
   font-weight: bold;
   margin-top: 5px;
-}
-
-.am-pm {
-  font-size: 20px;
 }

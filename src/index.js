@@ -18,7 +18,19 @@ function displayCityTime() {
     osloDateElement.innerHTML = moment().format("MMMM Do YYYY");
     osloTimeElement.innerHTML = osloTime.format("hh:mm:ss[<small>]A[</small>]");
   }
+
+  let harareElement = document.querySelector("#harare");
+  if (harareElement) {
+    let harareDateElement = harareElement.querySelector(".city-date");
+    let harareTimeElement = harareElement.querySelector(".city-time");
+    let harareTime = moment().tz("Africa/Harare");
+    harareDateElement.innerHTML = moment().format("MMMM Do YYYY");
+    harareTimeElement.innerHTML = harareTime.format(
+      "hh:mm:ss[<small>]A[</small>]"
+    );
+  }
 }
+
 setInterval(displayCityTime, 1000);
 
 function updateCityLocation(event) {

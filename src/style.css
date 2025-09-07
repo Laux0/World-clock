@@ -1,1 +1,13 @@
+h1 {
+  text-align: center;
+}
 
+footer {
+  text-align: center;
+}
+
+.container {
+  background: rgb(216, 216, 238);
+  max-width: 600px;
+  margin: 0 auto;
+}

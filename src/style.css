@@ -5,6 +5,7 @@ body {
 
 h1 {
   text-align: center;
+  font-size: 36px;
 }
 
 footer {
@@ -46,12 +47,12 @@ footer {
 
 .city-date {
   opacity: 0.7;
-  font-size: 18px;
+  font-size: 16px;
   margin-top: 5px;
 }
 
 .city-time {
-  font-size: 36px;
+  font-size: 35px;
   font-weight: bold;
   margin-top: 5px;
 }

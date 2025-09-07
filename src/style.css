@@ -31,18 +31,21 @@ footer {
 .city {
   display: flex;
   justify-content: space-between;
+  margin-top: 30px;
 }
 
 .city-name {
   margin: 0;
+  font-size: 24px;
 }
 
 .city-date {
   opacity: 0.7;
+  font-size: 18px;
 }
 
 .city-time {
-  font-size: 30px;
+  font-size: 32px;
   font-weight: bold;
 }
 

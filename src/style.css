@@ -33,7 +33,19 @@ footer {
   justify-content: space-between;
 }
 
+.city-name {
+  margin: 0;
+}
+
+.city-date {
+  opacity: 0.7;
+}
+
 .city-time {
   font-size: 30px;
   font-weight: bold;
+}
+
+.am-pm {
+  font-size: 20px;
 }

@@ -4,7 +4,7 @@ function displayCityTime() {
     let londonDateElement = londonElement.querySelector(".city-date");
     let londonTimeElement = londonElement.querySelector(".city-time");
     let londonTime = moment().tz("Europe/London");
-    londonDateElement.innerHTML = moment().format("MMMM Do YYYY");
+    londonDateElement.innerHTML = londonTime.format("MMMM Do YYYY");
     londonTimeElement.innerHTML = londonTime.format(
       "hh:mm:ss[<small>]A[</small>]"
     );
@@ -15,7 +15,7 @@ function displayCityTime() {
     let osloDateElement = osloElement.querySelector(".city-date");
     let osloTimeElement = osloElement.querySelector(".city-time");
     let osloTime = moment().tz("Europe/Oslo");
-    osloDateElement.innerHTML = moment().format("MMMM Do YYYY");
+    osloDateElement.innerHTML = osloTime.format("MMMM Do YYYY");
     osloTimeElement.innerHTML = osloTime.format("hh:mm:ss[<small>]A[</small>]");
   }
 
@@ -24,7 +24,7 @@ function displayCityTime() {
     let harareDateElement = harareElement.querySelector(".city-date");
     let harareTimeElement = harareElement.querySelector(".city-time");
     let harareTime = moment().tz("Africa/Harare");
-    harareDateElement.innerHTML = moment().format("MMMM Do YYYY");
+    harareDateElement.innerHTML = harareTime.format("MMMM Do YYYY");
     harareTimeElement.innerHTML = harareTime.format(
       "hh:mm:ss[<small>]A[</small>]"
     );

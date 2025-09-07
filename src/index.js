@@ -16,3 +16,23 @@ function displayCityTime() {
   osloTimeElement.innerHTML = osloTime.format("hh:mm:ss[<small>]A[</small>]");
 }
 setInterval(displayCityTime, 1000);
+
+function updateCityLocation(event) {
+  let cityTimezone = event.target.value;
+  let cityTime = moment().tz(cityTimezone);
+  let cityElement = document.querySelector("#cities");
+  cityElement.innerHTML = `<div class="city">
+          <div class="city-left">
+            <h3 class="city-name">${cityTimezone}</h3>
+            <div class="city-date">${cityTime.format("MMMM Do YYYY")}</div>
+          </div>
+          <div class="city-right">
+            <div class="city-time">${cityTime.format(
+              "hh:mm:ss[<small>]A[</small>]"
+            )}</div>
+          </div>
+        </div>`;
+}
+
+let citySelectElement = document.querySelector("#city-choice");
+citySelectElement.addEventListener("change", updateCityLocation);
